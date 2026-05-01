@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  --background: #f9fafb;
+  --foreground: #111827;
+}
+
+@layer base {
+  * {
+    /* Trocamos as variáveis que deram erro pelas cores concretas do nosso layout */
+    @apply border-gray-200 outline-violet-500/50;
+  }
+  body {
+    /* Mantém o fundo forçado pro modo claro */
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+  html {
+    @apply font-sans;
+  }
+}
